@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	  <title>Lab 4</title>
+  </head>
+<body>
+<?php
+//php code for the asc and desc funtions
+error_reporting(0);
+$direction = $_POST['direction'];
+//$term = $_POST['term'];
+$col = $_POST['col']; ?>
+
+<!--form sorting column for asc and dsc-->
+<header><h1>Corporations App</h1></header>
+
+<form action="index.php" method="post">
+
+	<label for 'col'>Sort Column:</label>
+	
+		<select name = 'col' id= = 'col'>
+			<option value = 'id'>id</option>
+			<option value = 'corp'>corp</option>
+			<option value = 'incorp_dt'>incorp_dt</option>
+			<option value = 'email'>email</option>
+			<option value = 'zipcode'>zipcode</option>
+			<option value = 'owner'>owner</option>
+			<option value = 'phone'>phone</option>
+		</select>
+	<label for = 'asc'>Ascending:</label>
+	
+	<input type = 'radio' name = 'direction' value = 'ASC' id = 'asc' />
+	
+	<label for = 'decs'>Descending:</label>
+	
+	<input type = 'radio' name = 'direction' value = 'DESC' id = 'desc' />
+	<input type = 'hidden' name = 'action' value = 'Sort' />
+	<input type = 'submit' />
+	<input type = 'submit' name = 'action' value = 'Reset' />
+	
+</form>
+
+	<br /> <br />
+	
+<!--form for sorting column by term-->
+<form action="index.php" method="post">	
+
+		<label for 'col'>Sort Column:</label>
+		
+		<select name = 'col' id= = 'col'>
+			<option value = 'id'>id</option>
+			<option value = 'corp'>corp</option>
+			<option value = 'incorp_dt'>incorp_dt</option>
+			<option value = 'email'>email</option>
+			<option value = 'zipcode'>zipcode</option>
+			<option value = 'owner'>owner</option>
+			<option value = 'phone'>phone</option>
+		</select>
+	<label for = 'term'>Term:</label>
+	
+	<input type = 'text' name = 'term' id = 'term'/>
+	<input type = 'hidden' name = 'action' value = 'Search' />
+	<input type = 'submit' />
+	<input type = 'submit' name = 'action' value = 'Reset' />
+	
+</form>
+	
