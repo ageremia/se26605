@@ -1,0 +1,46 @@
+.row {
+	border: 1px solid black;
+}
+.small_cell {
+	vertical-align: top;
+	width: 5%;
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+}
+.middle_cell {
+	vertical-align: top;
+	width: 15%;
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+}
+.large_cell {
+	vertical-align: top;
+	width: 35%;
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+}
+img {
+	width: 100%;
+}
+
+
+#receipt {
+	border: 1px solid black;
+	width: 50%;
+	text-align: right;
+}
+input, select {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.input_box {
+	border: 1px solid black;
+	width: 200px;
+	padding: 20px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
